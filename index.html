@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8b868dc4d1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo2.png" class="logo"> 
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a> </li>
+                    <li><a href="#about">About</a> </li>
+                    <li><a href="#services">Experience</a> </li>
+                    <li><a href="#portfolio">Portfolio</a> </li>
+                    <li><a href="#contact">Contact</a> </li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <br><span>Yoshita</span> </h1>
+            </div>
+        </div>
+        <!-- about -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><img src="images/userr.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title"><br><br><br><br>About Me</h1>
+                        <p>Dedicated and detail-oriented UX Designer with experience in user research, wireframing, and high-fidelity
+                            mockups. Passionate about user-centered design and committed to delivering a seamless and aesthetically
+                            appealing user experience. Seeking to contribute to ASU’s AI Cloud Innovation Center as part of a dynamic
+                            team that values innovation and design excellence.</p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Web Development</span><br>HTML5, CSS3</li>
+                                    <li><span>Programming Languages</span><br>Python, SQL, JavaScript, HTML/CSS</li>
+                                    <li><span>Design & Content</span><br>Wireframing, Infographics, Technical Writing</li>
+                                    <li><span>Design & Prototyping</span><br>Adobe Illustrator, Adobe Photoshop, Sketch, Figma</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>April 2024 - June 2024</span><br>UX Design Intern at Veritometrics Private Lmt</li>
+                                    <li><span>Dec 2023 - June 2024</span><br> Web development Intern at Suri Information Services</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2024 - Present</span><br>Masters in Arizona State University</li>
+                                    <li><span>2020 - 2024</span><br>Bachelor of technology in Jawaharlal Nehru Technological University</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- services -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">Professional experience</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>UX Design Intern</h2>
+                        <p>Conducted user research, task analysis, and usability testing to inform and refine design choices, leading to a
+                            30% increase in user satisfaction. <br><br>
+                            Developed user profiles and scenarios to better align design solutions with user needs, ensuring a more
+                            intuitive user experience. <br><br>
+                            Created high-fidelity mockups and wireframes in Figma to communicate design concepts and improve
+                            stakeholder alignment</p>
+                        
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>Web Developer Intern</h2>
+                        <p>Designed wireframes and prototypes for a mobile-responsive app interface, improving overall user flow and
+                            ease of navigation. <br><br>
+                            Collaborated with a team to create a consistent style guide and improve the visual cohesion of the website’s
+                            design. <br><br>
+                            Ensured responsive design compatibility, enhancing the app's accessibility on multiple device types.</p>
+                         
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- portfolio -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/1.jpg">
+                        <div class="layer">
+                            <h3>Tofolo</h3>
+                            <p>This app is used to connect with restaurants all around the state and is currently available in playstore for both android and ios. Click on the link below to view the screens I have designed.</p>
+                            <a href="screens/screens.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="screens/screens.html" class="btn">See More</a>
+            </div>
+        </div>
+
+        <!-- contact -->
+        
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>yyajjapu@asu.edu</p>
+                        <p><i class="fa-solid fa-phone"></i>+1 6237596825</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <a href="images/UX Designer.pdf" download class="btn btn2">Download Resume</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your email" required>
+                            <textarea name="Message" rows="6" placeholder="Your message" required></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p> Copyright @ Yoshita Yajjapurapu</p>
+            </div>
+        </div>
+<script>
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove('active-link');
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove('active-tab');
+        }
+        event.currentTarget.classList.add('active-link');
+        document.getElementById(tabname).classList.add('active-tab');
+    }   
+</script>
+<script>
+    var sidemenu=document.getElementById('sidemenu');
+    function openmenu(){
+        sidemenu.style.right= '0';
+    }
+    function closemenu(){
+        sidemenu.style.right= '-200px';
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby70BtuTfj1I7piXVWnn7ZL3JsVIdNGy1e6Gfwn9vCN6a4564NvcyFbdSNWFFfsJbew8A/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg=document.getElementById('msg')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML= 'Message sent successfully'
+            setTimeout(function(){
+                msg.innerHTML=''
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  
+</body> 
+</html>
