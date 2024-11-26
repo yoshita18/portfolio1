@@ -388,10 +388,16 @@ nav .fa-solid{
 @media only screen and (max-width:600px){
     #header{
         background-image: url(images/back1ss.png);
+        display: flex; /* Use flexbox to control layout */
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center-align the content */
+        justify-content: flex-start;
     }
     .header-text{
         margin-top: 100%;
         font-size: 16px;
+        order: 1; /* Ensure text comes first */
+        text-align: center;
     }
     .header-text h1{
         font-size: 30px;
@@ -438,6 +444,14 @@ nav .fa-solid{
 
     .about-col-1{
         margin-bottom: 30px;
+        order: 2; /* Move image below the text */
+        margin-top: 20px; /* Add spacing between text and image */
+        width: 80%;
+    }
+
+    .about-col-1 img {
+        width: 100%; /* Ensure the image scales properly */
+        border-radius: 10px; /* Maintain professional styling */
     }
 
     .about-col-2{
